@@ -1,0 +1,183 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  background-color: #f1f1f1;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header nav {
+  margin-top: 1em;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav li {
+  margin-right: 1em;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1em;
+}
+
+section {
+  margin-bottom: 2em;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+section#about img {
+  float: left;
+  margin-right: 1em;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: contain;
+  height: 50%;
+}
+
+
+
+
+section#services div {
+  display: flex;
+}
+
+section#services div div {
+  flex: 1;
+  margin-right: 0.5em;
+}
+
+section#services div div img {
+  width: 20%;
+  margin-right: 1em;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+
+section#portfolio div {
+  display: block;
+}
+
+section#portfolio div div {
+  flex: 1;
+  margin-right: 2em;
+}
+
+section#portfolio div div img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+section#contact form {
+  margin-top: 1em;
+}
+
+section#contact label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+section#contact input[type="text"],
+section#contact input[type="email"],
+section#contact textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+section#contact input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+section#contact input[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    margin-top: 1em;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+  }
+  main section {
+    padding: 1em;
+  }
+  section#about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section#services div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section#portfolio div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
