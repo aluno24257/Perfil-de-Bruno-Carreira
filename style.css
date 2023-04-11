@@ -60,18 +60,31 @@ section h2 {
   font-size: 1.8em;
 }
 
+section#about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+section#about div {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
 section#about img {
-  float: left;
-  margin-right: 1em;
-  width: 150px;
+  width: 10%;
+  max-width: 150px;
   height: auto;
   border-radius: 50%;
   object-fit: contain;
-  height: 50%;
+  margin-right: 1em;
 }
 
-
-
+section#about p {
+  margin-top: 1em;
+}
 
 section#services div {
   display: flex;
@@ -139,6 +152,42 @@ section#contact input[type="submit"]:hover {
   background-color: #555;
 }
 
+section#notas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 24px;
+  gap: 24px;
+}
+
+section#notas .note {
+  height: 200px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  resize: none;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+section#notas .add-note {
+  height: 200px;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 120px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+section#notas .add-note:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
 
 @media screen and (max-width: 768px) {
   header {
@@ -146,38 +195,53 @@ section#contact input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
   }
-  nav {
+  header h1 {
+    font-size: 1.8em;
+  }
+  header nav {
     margin-top: 1em;
   }
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0;
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav li {
+    margin-bottom: 0.5em;
   }
   main section {
     padding: 1em;
   }
-  section#about div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  section#about img {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 1em;
   }
   section#services div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  section#portfolio div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  section#services div div {
+    margin-right: 0;
+    margin-bottom: 1em;
   }
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  section#services div div img {
+    width: 100%;
+    max-width: 50px;
+    margin-right: 0;
+  }
+  section#portfolio div div {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  section#portfolio div div img {
+    width: 100%;
+    max-width: 150px;
+  }
+  section#contact form {
+    width: 100%;
   }
 }
 
