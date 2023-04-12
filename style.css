@@ -60,20 +60,20 @@ section h2 {
   font-size: 1.8em;
 }
 
-section#about {
+#about {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
 
-section#about div {
+#about div {
   display: flex;
   align-items: center;
   margin-top: 1em;
 }
 
-section#about img {
+#about img {
   width: 10%;
   max-width: 150px;
   height: auto;
@@ -82,20 +82,20 @@ section#about img {
   margin-right: 1em;
 }
 
-section#about p {
+#about p {
   margin-top: 1em;
 }
 
-section#services div {
+#services div {
   display: flex;
 }
 
-section#services div div {
+#services div div {
   flex: 1;
   margin-right: 0.5em;
 }
 
-section#services div div img {
+#services div div img {
   width: 20%;
   margin-right: 1em;
   height: auto;
@@ -104,33 +104,33 @@ section#services div div img {
 }
 
 
-section#portfolio div {
+#portfolio div {
   display: block;
 }
 
-section#portfolio div div {
+#portfolio div div {
   flex: 1;
   margin-right: 2em;
 }
 
-section#portfolio div div img {
+#portfolio div div img {
   width: 50%;
   border-radius: 5px;
 }
 
-section#contact form {
+#contact form {
   margin-top: 1em;
 }
 
-section#contact label {
+#contact label {
   display: block;
   margin-bottom: 0.5em;
   font-weight: bold;
 }
 
-section#contact input[type="text"],
-section#contact input[type="email"],
-section#contact textarea {
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
   width: 100%;
   padding: 0.5em;
   border-radius: 5px;
@@ -138,7 +138,7 @@ section#contact textarea {
   box-shadow: 0px 0px 5px #ccc;
 }
 
-section#contact input[type="submit"] {
+#contact input[type="submit"] {
   background-color: #333;
   color: #fff;
   padding: 0.5em 1em;
@@ -148,18 +148,18 @@ section#contact input[type="submit"] {
   margin-top: 1em;
 }
 
-section#contact input[type="submit"]:hover {
+#contact input[type="submit"]:hover {
   background-color: #555;
 }
 
-section#notas {
+#notas {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   padding: 24px;
   gap: 24px;
 }
 
-section#notas .note {
+#notas .note {
   height: 200px;
   box-sizing: border-box;
   padding: 16px;
@@ -171,7 +171,7 @@ section#notas .note {
   font-size: 16px;
 }
 
-section#notas .add-note {
+#notas .add-note {
   height: 200px;
   border: none;
   outline: none;
@@ -183,7 +183,7 @@ section#notas .add-note {
   transition: background 0.2s;
 }
 
-section#notas .add-note:hover {
+#notas .add-note:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -211,36 +211,36 @@ section#notas .add-note:hover {
   main section {
     padding: 1em;
   }
-  section#about img {
+  #about img {
     float: none;
     margin-right: 0;
     width: 100%;
     max-width: 150px;
     margin-bottom: 1em;
   }
-  section#services div {
+  #services div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  section#services div div {
+  #services div div {
     margin-right: 0;
     margin-bottom: 1em;
   }
-  section#services div div img {
+  #services div div img {
     width: 100%;
     max-width: 50px;
     margin-right: 0;
   }
-  section#portfolio div div {
+  #portfolio div div {
     margin-right: 0;
     margin-bottom: 1em;
   }
-  section#portfolio div div img {
+  #portfolio div div img {
     width: 100%;
     max-width: 150px;
   }
-  section#contact form {
+  #contact form {
     width: 100%;
   }
 }
