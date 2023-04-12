@@ -189,7 +189,7 @@ section h2 {
 
 
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 720px) {
   header {
     display: flex;
     flex-direction: column; 
