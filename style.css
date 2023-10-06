@@ -1,24 +1,23 @@
+/* Estilos gerais */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 1.5;
   background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 1em;
+  padding: 1em 0;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2em;
-}
-
-header nav {
-  margin-top: 1em;
+  margin: 0;
 }
 
 header nav ul {
@@ -37,102 +36,112 @@ header nav a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2em;
+  transition: color 0.3s;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+  color: #007BFF;
 }
 
-main {
-  padding: 1em;
+/* Estilos para seção "Sobre" */
+#about {
+  text-align: center;
+  padding: 2em;
 }
 
-section {
-  margin-bottom: 2em;
+#about img {
+  width: 150px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+/* Estilos para seção "Portfólio" */
+#portfolio {
+  text-align: center;
+  padding: 2em;
+}
+
+#portfolio .project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -1em;
+}
+
+#portfolio .project-item {
+  flex: 1;
+  margin: 0 1em;
   background-color: #fff;
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0px 0px 5px #ccc;
-}
-
-section h2 {
-  margin-top: 0;
-  font-size: 1.8em;
-}
-
-#about {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin-bottom: 2em;
   text-align: center;
 }
 
-#about div {
+#portfolio .project h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+#portfolio .project p {
+  margin-top: 0.5em;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 1em;
+  /* Estilos adicionais para as imagens */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+
+.project {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -1em;
+}
+
+.project > div {
+  flex: 1;
+  margin: 0 1em;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+  margin-bottom: 2em;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.project p {
+  margin-top: 0.5em;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
   margin-top: 1em;
 }
 
-#about img {
-  width: 10%;
-  max-width: 150px;
-  height: auto;
-  border-radius: 50%;
-  object-fit: contain;
-  margin-right: 1em;
+/* Estilos para seção "Contato" */
+#contact {
+  text-align: center;
+  padding: 2em;
 }
-
-#about p {
-  margin-top: 1em;
-}
-
-#services div {
-  display: flex;
-}
-
-#services div div {
-  flex: 1;
-  margin-right: 0.5em;
-}
-
-#services div div img {
-  width: 20%;
-  margin-right: 1em;
-  height: auto;
-  border-radius: 5px;
-  object-fit: contain;
-}
-
-
-#portfolio div {
-  display: block;
-}
-
-#portfolio div div {
-  flex: 1;
-  margin-right: 2em;
-}
-
-#portfolio div div img {
-  width: 50%;
-  border-radius: 5px;
-}
-
-#portfolio div a {
-  display: inline-block;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-#portfolio div a:hover {
-  background-color: #45a049;
-}
-
 
 #contact form {
   margin-top: 1em;
@@ -140,7 +149,6 @@ section h2 {
 
 #contact label {
   display: block;
-  margin-bottom: 0.5em;
   font-weight: bold;
 }
 
@@ -152,32 +160,38 @@ section h2 {
   border-radius: 5px;
   border: 1px solid #ccc;
   box-shadow: 0px 0px 5px #ccc;
+  margin-top: 0.5em;
 }
 
 #contact input[type="submit"] {
-  background-color: #333;
+  background-color: #007BFF;
   color: #fff;
   padding: 0.5em 1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 1em;
+  transition: background-color 0.3s;
 }
 
 #contact input[type="submit"]:hover {
-  background-color: #555;
+  background-color: #0056b3;
 }
 
+/* Estilos para seção "Bloco de Notas" */
 #notas {
+  text-align: center;
+  padding: 2em;
+}
+
+.note-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  padding: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 24px;
 }
 
-#notas .note {
+.note {
   height: 200px;
-  box-sizing: border-box;
   padding: 16px;
   border: none;
   border-radius: 10px;
@@ -187,7 +201,7 @@ section h2 {
   font-size: 16px;
 }
 
-#notas .add-note {
+.add-note {
   height: 200px;
   border: none;
   outline: none;
@@ -199,65 +213,6 @@ section h2 {
   transition: background 0.2s;
 }
 
-#notas .add-note:hover {
+.add-note:hover {
   background: rgba(0, 0, 0, 0.2);
 }
-
-
-
-@media screen and (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-  }
-  header h1 {
-    font-size: 1.8em;
-  }
-  header nav {
-    margin-top: 1em;
-  }
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  header nav li {
-    margin-bottom: 0.5em;
-  }
-  main section {
-    padding: 1em;
-  }
-  #about img {
-    float: none;
-    margin-right: 0;
-    width: 100%;
-    max-width: 150px;
-    margin-bottom: 1em;
-  }
-  #services div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #services div div {
-    margin-right: 0;
-    margin-bottom: 1em;
-  }
-  #services div div img {
-    width: 100%;
-    max-width: 50px;
-    margin-right: 0;
-  }
-  #portfolio div div {
-    margin-right: 0;
-    margin-bottom: 1em;
-  }
-  #portfolio div div img {
-    width: 100%;
-    max-width: 150px;
-  }
-  #contact form {
-    width: 100%;
-  }
-}
-
