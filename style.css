@@ -45,8 +45,9 @@ header nav a:hover {
 
 #about {
   display: flex;
-  justify-content: left;
-  padding: 2em;
+  justify-content: center;
+  padding: 1em;
+  margin-right: 10em;
 }
 
 #about img {
@@ -253,6 +254,7 @@ header nav a:hover {
     display: flex;
     justify-content: left;
     padding: 2em;
+    margin-right: 0em;
   }
 
   #about img {
