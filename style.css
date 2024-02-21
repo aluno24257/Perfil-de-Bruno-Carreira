@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   line-height: 1.5;
-  background-color: #f1f1f1;
+  background: linear-gradient(90deg, #c4cad0, #147da0);
   margin: 0;
   padding: 0;
 }
@@ -43,25 +43,22 @@ header nav a:hover {
   color: #007BFF;
 }
 
-/* Estilos para seção "Sobre" */
 #about {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+  justify-content: left;
+  padding: 2em;
 }
 
 #about img {
   width: 250px;
-  max-width: 20%;
+  max-width: 100%;
+  height: auto;
+
   border-radius: 10%;
-  margin-top: 3em;
-  /*margin-right: 2em;  Ajuste o valor conforme necessário */
+  margin-top: 6em;
 }
 
 
-
-/* Estilos para seção "Portfólio" */
 #portfolio {
   text-align: center;
   padding: 2em;
@@ -235,8 +232,10 @@ header nav a:hover {
 .add-note:hover {
   background: rgba(0, 0, 0, 0.2);
 }
+
 /* Estilos para dispositivos com largura máxima de 768px */
 @media screen and (max-width: 768px) {
+
   /* Estilos gerais */
   body {
     font-size: 1em;
@@ -250,13 +249,31 @@ header nav a:hover {
     font-size: 1em;
   }
 
+  #about {
+    display: flex;
+    justify-content: left;
+    padding: 2em;
+  }
+
+  #about img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10%;
+    margin-top: 3em;
+  }
+
+
+
   /* Estilos para seção "Sobre" */
   #about img {
-    height: 300%;
-    max-width: 300%;
-    margin-right: 0em;
-    margin-bottom: 3em;
-    margin-top: 3em; /* Added margin-top value */
+    width: 150px;
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+    border-radius: 10%;
+    margin-top: 6em;
   }
 
   /* Estilos para seção "Portfólio" */
