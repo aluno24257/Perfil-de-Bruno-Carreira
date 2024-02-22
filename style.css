@@ -52,11 +52,16 @@ header nav a:hover {
 
 #about img {
   width: 250px;
+  min-width: 200px; /* Increased minimum width */
   max-width: 100%;
   height: auto;
-
+  transition: transform 0.3s ease-in-out;
   border-radius: 10%;
   margin-top: 6em;
+}
+
+#about img:hover {
+  transform: scale(1.1);
 }
 
 
@@ -106,20 +111,19 @@ header nav a:hover {
 }
 
 /* Estilos para os botões */
-#botoes {
+.botoes {
   background-color: #007BFF;
-  color: #fff;
+  color: #007BFF; /* Change the text color to match the background color */
   padding: 0.5em 1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 1em;
   transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif; /* Change the font style */
+  text-decoration: underline; /* Add underline to the text */
 }
 
-.button:hover {
-  background-color: #0056b3;
-}
 
 .project {
   display: flex;
@@ -260,23 +264,17 @@ header nav a:hover {
   #about img {
     width: 250px;
     max-width: 100%;
-    height: auto;
-
-    border-radius: 10%;
-    margin-top: 3em;
-  }
-
-
-
-  /* Estilos para seção "Sobre" */
-  #about img {
-    width: 150px;
-    max-width: 100%;
-    min-width: 50%;
+    min-width: 100px;
     height: auto;
     border-radius: 10%;
     margin-top: 6em;
   }
+
+  #about img:hover {
+    transform: scale(1.1);
+  }
+
+
 
   /* Estilos para seção "Portfólio" */
   #portfolio .project-item {
