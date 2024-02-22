@@ -44,9 +44,10 @@ header nav a:hover {
 }
 
 #about {
-  display: flex;
-  justify-content: center;
+  display: float;
+  justify-content: flex-end;
   padding: 1em;
+  margin-left: 5em;
   margin-right: 10em;
 }
 
@@ -255,8 +256,9 @@ header nav a:hover {
   }
 
   #about {
-    display: flex;
+    display: float;
     justify-content: left;
+    margin-left: 1em;
     padding: 2em;
     margin-right: 0em;
   }
